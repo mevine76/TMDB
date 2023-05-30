@@ -18,12 +18,12 @@ fetch('https://api.themoviedb.org/3/movie/upcoming?language=fr-FR&page=1', optio
     for (const moviesUpcoming of response.results) {
         upComing.innerHTML+= `
           
-        <img src="https://image.tmdb.org/t/p/w500${moviesUpcoming.poster_path}" width="350px" alt="${moviesUpcoming.title}">
-        <div class="movie-info">
+        <img src="https://image.tmdb.org/t/p/w500${moviesUpcoming.poster_path}"  alt="${moviesUpcoming.title}" id="poster">
+        <div class="movie-info2">
             <h3>${moviesUpcoming.title}</h3>
             
         </div>
-        <div class="overview">
+        <div class="overview" id="over">
         <h3>Overview</h3>
         ${moviesUpcoming.overview}
         </div>

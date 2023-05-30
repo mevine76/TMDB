@@ -56,6 +56,16 @@ main{
     border-radius: 4px;
 }
 
+#poster{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #eee;
+}
 .movie img{
     width: 100%;
 }
@@ -69,6 +79,14 @@ main{
     letter-spacing: 0.5px;
 }
 
+.movie-info2{
+    background-color: rgb(187, 87, 187);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5rem;
+}
 .movie-info h3{
     margin-top: 0;
 }
@@ -101,5 +119,17 @@ main{
     right: 0;
     max-height: 100%;
     transform: translateY(101%);
+
+}
+
+#over{
+    background-color: #beb6b6;
+    padding: 5rem;
+    left: 0;
+    border: 0;
+    right: 0;
+    max-height: 50%;
+    transform: translateY(101%);
+    
 
 }
